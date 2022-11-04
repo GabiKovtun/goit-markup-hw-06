@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Домашне Завдання 5</title>
+    <title>Домашне Завдання 6</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -66,10 +66,81 @@
           <button class="hero-btn" data-modal-open>Замовити послугу</button>
           <div class="backdrop is-hidden" data-modal>
             <div class="modal">
-              <button type="button" data-modal-close class="close"><svg class="modal-icon" width="11" height="11">
-                <use href="./images/icon.svg#icon-modal-x"></use>
-              </svg></button>
-              <p>Залиште свої дані, ми вам передзвонимо</p>
+              <button type="button" data-modal-close class="close">
+                <svg class="modal-icon" width="11" height="11">
+                  <use href="./images/icon.svg#icon-modal-x"></use>
+                </svg>
+              </button>
+              <p class="modal-title">Залиште свої дані, ми вам передзвонимо</p>
+              <form class="modal-form">
+                <label for="user_name" class="modal-info">Ім'я</label>
+                <div class="input-wrap">
+                  <input
+                    type="name"
+                    name="name"
+                    id="user_name"
+                    class="modal-input"
+                    required
+                  />
+                  <svg class="input-icon" width="18px" height="18px">
+                    <use href="./images/icon.svg#icon-person"></use>
+                  </svg>
+                </div>
+                <label for="user_tel" class="modal-info">Телефон</label>
+                <div class="input-wrap">
+                  <input
+                    type="tel"
+                    name="phone"
+                    autocomplete="tel"
+                    class="modal-input"
+                    id="user_tel"
+                    required
+                  /><svg class="input-icon" width="18px" height="18px">
+                    <use href="./images/icon.svg#icon-phone"></use>
+                  </svg>
+                </div>
+                <label for="user_mail" class="modal-info">Пошта</label>
+                <div class="input-wrap">
+                  <input
+                    type="mail"
+                    name="mail"
+                    class="modal-input"
+                    id="user_mail"
+                    required
+                  /><svg class="input-icon" width="18px" height="18px">
+                    <use href="./images/icon.svg#icon-email"></use>
+                  </svg>
+                </div>
+                <label for="user_coment" class="modal-info">Коментар</label>
+                <textarea
+                  class="modal-textarea"
+                  name="coment"
+                  id="user_coment"
+                  placeholder="Введіть текст"
+                ></textarea>
+                <div class="modal-checkbox">
+                  <input
+                    type="checkbox"
+                    name="agree"
+                    id="agree"
+                    class="checkbox visually-hidden"
+                  />
+
+                  <div class="check-box">
+                    <svg class="icon-checked" width="16" height="15">
+                      <use href="./images/icon.svg#icon-icon-check"></use>
+                    </svg>
+                  </div>
+
+                  <label for="agree" class="checkbox-label">
+                    Погоджуюся з розсилкою та приймаю
+                    <a href="#" class="modal-link link">
+                      Умови договору</a
+                    ></label
+                  >
+                </div>
+                <button type="submit" class="modal-submit">Відправити</button>
+              </form>
             </div>
           </div>
         </div>
@@ -140,7 +211,9 @@
                 alt="Руки програміста при роботі"
                 width="370"
               />
-              <div class="text-cover"><p class="work-text">Десктопні додатки</p></divclass="text-cover">
+              <div class="text-cover">
+                <p class="work-text">Десктопні додатки</p>
+              </div>
             </li>
             <li class="work-image">
               <img
@@ -148,7 +221,9 @@
                 alt="Телефон в руці та на екрані ноутбуку"
                 width="370"
               />
-            <div class="text-cover"><p class="work-text">Мобільні додатки</p></div>
+              <div class="text-cover">
+                <p class="work-text">Мобільні додатки</p>
+              </div>
             </li>
             <li class="work-image">
               <img
@@ -156,7 +231,9 @@
                 alt="Кольорова палітра на екрані планшету"
                 width="370"
               />
-              <div class="text-cover"><p class="work-text">Дизайнерські рішення</p></div>
+              <div class="text-cover">
+                <p class="work-text">Дизайнерські рішення</p>
+              </div>
             </li>
           </ul>
         </div>
@@ -441,6 +518,25 @@
               </a>
             </li>
           </ul>
+        </div>
+        <div class="footer-subsription">
+          <h3 class="subsription-title">Підпишіться на розсилку</h3>
+          <form class=".subsription_form">
+            <label>
+              <input
+                type="email"
+                name="email"
+                placeholder="Email"
+                class="footer-input"
+              />
+            </label>
+            <button type="submit" class="subsription-btn">
+              Підписатися
+              <svg class="footer-send" width="24" height="24">
+                <use href="./images/icon.svg#icon-send"></use>
+              </svg>
+            </button>
+          </form>
         </div>
       </div>
     </footer>
