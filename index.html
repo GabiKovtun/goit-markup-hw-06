@@ -73,10 +73,10 @@
               </button>
               <p class="modal-title">Залиште свої дані, ми вам передзвонимо</p>
               <form class="modal-form">
-                <label for="user_name" class="modal-info">Ім'я</label>
                 <div class="input-wrap">
+                  <label for="user_name" class="modal-info">Ім'я</label>
                   <input
-                    type="name"
+                    type="text"
                     name="name"
                     id="user_name"
                     class="modal-input"
@@ -86,8 +86,8 @@
                     <use href="./images/icon.svg#icon-person"></use>
                   </svg>
                 </div>
-                <label for="user_tel" class="modal-info">Телефон</label>
                 <div class="input-wrap">
+                  <label for="user_tel" class="modal-info">Телефон</label>
                   <input
                     type="tel"
                     name="phone"
@@ -99,45 +99,45 @@
                     <use href="./images/icon.svg#icon-phone"></use>
                   </svg>
                 </div>
-                <label for="user_mail" class="modal-info">Пошта</label>
                 <div class="input-wrap">
+                  <label for="user_email" class="modal-info">Пошта</label>
                   <input
-                    type="mail"
-                    name="mail"
+                    type="email"
+                    name="email"
                     class="modal-input"
-                    id="user_mail"
+                    id="user_email"
                     required
                   /><svg class="input-icon" width="18px" height="18px">
                     <use href="./images/icon.svg#icon-email"></use>
                   </svg>
                 </div>
-                <label for="user_coment" class="modal-info">Коментар</label>
-                <textarea
-                  class="modal-textarea"
-                  name="coment"
-                  id="user_coment"
-                  placeholder="Введіть текст"
-                ></textarea>
+                <div class="input-wrap input-textarea">
+                  <label for="user_coment" class="modal-info">Коментар</label>
+                  <textarea
+                    class="modal-textarea"
+                    name="coment"
+                    id="user_coment"
+                    placeholder="Введіть текст"
+                  ></textarea>
+                </div>
                 <div class="modal-checkbox">
-                  <input
-                    type="checkbox"
-                    name="agree"
-                    id="agree"
-                    class="checkbox visually-hidden"
-                  />
-
-                  <div class="check-box">
-                    <svg class="icon-checked" width="16" height="15">
-                      <use href="./images/icon.svg#icon-icon-check"></use>
-                    </svg>
-                  </div>
-
                   <label for="agree" class="checkbox-label">
-                    Погоджуюся з розсилкою та приймаю
-                    <a href="#" class="modal-link link">
-                      Умови договору</a
-                    ></label
-                  >
+                    <input
+                      type="checkbox"
+                      name="agree"
+                      id="agree"
+                      class="checkbox visually-hidden"
+                    />
+                    <div class="check-box">
+                      <svg class="icon-checked" width="16" height="15">
+                        <use href="./images/icon.svg#icon-icon-check"></use>
+                      </svg>
+                    </div>
+                    <div class="checkbox-text">
+                      Погоджуюся з розсилкою та приймаю
+                      <a href="#" class="modal-link link"> Умови договору</a>
+                    </div>
+                    </label>
                 </div>
                 <button type="submit" class="modal-submit">Відправити</button>
               </form>
@@ -521,23 +521,21 @@
         </div>
         <div class="footer-subsription">
           <h3 class="subsription-title">Підпишіться на розсилку</h3>
-          <form class=".subsription_form">
-            <div class="input-wrap">
-              <label>
-                <input
-                  type="email"
-                  name="email"
-                  placeholder="Email"
-                  class="footer-input"
-                />
-              </label>
-              <button type="submit" class="subsription-btn">
-                Підписатися
-                <svg class="footer-send" width="24" height="24">
-                  <use href="./images/icon.svg#icon-send"></use>
-                </svg>
-              </button>
-            </div>
+          <form class="subsription_form">
+            <label>
+              <input
+                type="email"
+                name="email"
+                placeholder="Email"
+                class="footer-input"
+              />
+            </label>
+            <button type="submit" class="subsription-btn">
+              Підписатися
+              <svg class="footer-send" width="24" height="24">
+                <use href="./images/icon.svg#icon-send"></use>
+              </svg>
+            </button>
           </form>
         </div>
       </div>
